@@ -3,9 +3,9 @@ package org.schabi.newpipe
 import java.net.InetAddress
 import java.net.UnknownHostException
 import okhttp3.Dns
-import okhttp3.DnsOverHttps
 import okhttp3.HttpUrl.Companion.toHttpUrl
 import okhttp3.OkHttpClient
+import okhttp3.dnsoverhttps.DnsOverHttps
 
 /**
  * TechTonicPipe's VPN-proof DNS.
