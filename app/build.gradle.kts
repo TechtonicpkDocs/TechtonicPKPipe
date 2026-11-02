@@ -271,6 +271,7 @@ dependencies {
     // HTTP client
     implementation(libs.squareup.okhttp)
     implementation(libs.squareup.okhttp.brotli)
+    implementation(libs.squareup.okhttp.dnsoverhttps)
 
     // Media player
     implementation(libs.google.exoplayer.core)

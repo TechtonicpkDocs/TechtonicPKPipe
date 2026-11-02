@@ -24,6 +24,7 @@ import io.reactivex.rxjava3.plugins.RxJavaPlugins
 import java.io.IOException
 import java.io.InterruptedIOException
 import java.net.SocketException
+import okhttp3.OkHttpClient
 import org.acra.ACRA.init
 import org.acra.ACRA.isACRASenderServiceProcess
 import org.acra.config.CoreConfigurationBuilder
@@ -136,7 +137,9 @@ open class App :
         }.build()
 
     protected open fun getDownloader(): Downloader {
-        val downloader = DownloaderImpl.init(null)
+        // TechTonicPipe: VPN-proof DNS instead of the system default (see TechTonicDns).
+        // Keeps working even when the VPN's own DNS is broken or filtered.
+        val downloader = DownloaderImpl.init(OkHttpClient.Builder().dns(TechTonicDns.create()))
         setCookiesToDownloader(downloader)
         return downloader
     }
