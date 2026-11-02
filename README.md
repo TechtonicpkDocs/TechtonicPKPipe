@@ -1,5 +1,15 @@
 <p align="center"><b>TechTonicPipe</b> — a NewPipe fork by TECHTONICPK</p>
 
+> *TechTonicPipe* is a fork of [NewPipe](https://github.com/TeamNewPipe/NewPipe), maintained by *TECHTONICPK (Muhammad Riyaz, Layyah, Pakistan)*.
+>
+> *What's different:*
+> - *VPN-proof DNS* — Cloudflare → Google DoH with system fallback, so the app reaches YouTube even where the network's DNS fails
+> - Custom branding — TechTonicPipe name and launcher icon
+>
+> Debug APKs are built automatically with GitHub Actions. Original work, GPL-3.0 licensed.
+
+---<p align="center"><b>TechTonicPipe</b> — a NewPipe fork by TECHTONICPK</p>
+
 > **TechTonicPipe** is a fork of [NewPipe](https://github.com/TeamNewPipe/NewPipe), maintained by **TECHTONICPK (Muhammad Riyaz, Layyah, Pakistan)**.
 >
 > **What's different:**
